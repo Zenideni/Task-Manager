@@ -99,7 +99,7 @@ class TaskManagerGUI:
         self.task_listbox = tk.Listbox(self.master, selectmode=tk.SINGLE, height=10, width=50, bg=self.bg_color, fg=self.fg_color)
         self.task_listbox.pack(pady=10)
 
-        # Pozostałe przyciski
+        # Przyciski
         self.edit_button = tk.Button(self.master, text="Edit Task", command=self.edit_task, bg=self.bg_color, fg=self.fg_color)
         self.edit_button.pack(pady=5)
 
@@ -229,7 +229,7 @@ class TaskManagerGUI:
         self.save_button.configure(bg=self.bg_color, fg=self.fg_color)
         self.load_button.configure(bg=self.bg_color, fg=self.fg_color)
 
-# Przykładowe użycie
+# Użycie
 if __name__ == "__main__":
     root = tk.Tk()
     app = TaskManagerGUI(root)
